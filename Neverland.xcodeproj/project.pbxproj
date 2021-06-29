@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844C6258268A4126001A2D24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844C6257268A4125001A2D24 /* main.cpp */; };
+		844C6270268B0FF1001A2D24 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C626D268B0FDB001A2D24 /* libglfw3.a */; };
+		844C6279268B1485001A2D24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C6278268B1485001A2D24 /* Cocoa.framework */; };
+		844C627B268B148B001A2D24 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C627A268B148B001A2D24 /* IOKit.framework */; };
+		844C627D268B1490001A2D24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C627C268B1490001A2D24 /* OpenGL.framework */; };
+		84E9147C268BC22100418E05 /* GLEW.2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84621C4D268BC1CE00707AF7 /* GLEW.2.1.0.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844C626C268B0FDB001A2D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA0235236A694DFABC60A45B;
+			remoteInfo = glfw;
+		};
+		844C626E268B0FE6001A2D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD89A2F1E4049B5B8A94F54;
+			remoteInfo = glfw;
+		};
+		84621C4C268BC1CE00707AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848C193E268BBFED00CBFF00 /* GLEW.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4120050548994578A955A9C5;
+			remoteInfo = glew;
+		};
+		84E91479268BC21D00418E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 848C193E268BBFED00CBFF00 /* GLEW.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 939AA76069F24A858BC0A98C;
+			remoteInfo = glew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844C6257268A4125001A2D24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLFW.xcodeproj; path = Vendor/GLFW/GLFW.xcodeproj; sourceTree = "<group>"; };
+		844C6278268B1485001A2D24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		844C627A268B148B001A2D24 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		844C627C268B1490001A2D24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		848C193E268BBFED00CBFF00 /* GLEW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLEW.xcodeproj; path = Vendor/GLEW/GLEW.xcodeproj; sourceTree = "<group>"; };
+		C6255728C996295A4B02CD68 /* Neverland */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Neverland; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5539F898F88581CA13564ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E9147C268BC22100418E05 /* GLEW.2.1.0.a in Frameworks */,
+				844C6270268B0FF1001A2D24 /* libglfw3.a in Frameworks */,
+				844C627D268B1490001A2D24 /* OpenGL.framework in Frameworks */,
+				844C627B268B148B001A2D24 /* IOKit.framework in Frameworks */,
+				844C6279268B1485001A2D24 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41222AFFC4678871EDAF093F /* Neverland */ = {
+			isa = PBXGroup;
+			children = (
+				843AE585268BC27E002963BD /* src */,
+				844C6267268B0FB1001A2D24 /* Projects */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				844C6254268A40BF001A2D24 /* Frameworks */,
+			);
+			name = Neverland;
+			sourceTree = "<group>";
+		};
+		843AE585268BC27E002963BD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				844C6257268A4125001A2D24 /* main.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		844C6254268A40BF001A2D24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				844C627C268B1490001A2D24 /* OpenGL.framework */,
+				844C627A268B148B001A2D24 /* IOKit.framework */,
+				844C6278268B1485001A2D24 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844C6267268B0FB1001A2D24 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				848C193E268BBFED00CBFF00 /* GLEW.xcodeproj */,
+				844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		844C6269268B0FDB001A2D24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844C626D268B0FDB001A2D24 /* libglfw3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84621C49268BC1CD00707AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84621C4D268BC1CE00707AF7 /* GLEW.2.1.0.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6255728C996295A4B02CD68 /* Neverland */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA8AEA0EE9313E004272984E /* Neverland */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437540F7E6C0CA2901919737 /* Build configuration list for PBXNativeTarget "Neverland" */;
+			buildPhases = (
+				C5217938686D026A833DCF78 /* Resources */,
+				2ECE928FD21A1BC1ECEAE8CF /* Sources */,
+				5539F898F88581CA13564ED8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E9147A268BC21D00418E05 /* PBXTargetDependency */,
+				844C626F268B0FE6001A2D24 /* PBXTargetDependency */,
+			);
+			name = Neverland;
+			productInstallPath = "$(HOME)/bin";
+			productName = Neverland;
+			productReference = C6255728C996295A4B02CD68 /* Neverland */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					BA8AEA0EE9313E004272984E = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Neverland" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41222AFFC4678871EDAF093F /* Neverland */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84621C49268BC1CD00707AF7 /* Products */;
+					ProjectRef = 848C193E268BBFED00CBFF00 /* GLEW.xcodeproj */;
+				},
+				{
+					ProductGroup = 844C6269268B0FDB001A2D24 /* Products */;
+					ProjectRef = 844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BA8AEA0EE9313E004272984E /* Neverland */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		844C626D268B0FDB001A2D24 /* libglfw3.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglfw3.a;
+			remoteRef = 844C626C268B0FDB001A2D24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84621C4D268BC1CE00707AF7 /* GLEW.2.1.0.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = GLEW.2.1.0.a;
+			remoteRef = 84621C4C268BC1CE00707AF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5217938686D026A833DCF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2ECE928FD21A1BC1ECEAE8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844C6258268A4126001A2D24 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		844C626F268B0FE6001A2D24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = glfw;
+			targetProxy = 844C626E268B0FE6001A2D24 /* PBXContainerItemProxy */;
+		};
+		84E9147A268BC21D00418E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = glew;
+			targetProxy = 84E91479268BC21D00418E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20D56A6EC5280820D76050AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OBJROOT = "bin-int/Debug";
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = bin/Debug;
+			};
+			name = Debug;
+		};
+		A0419828A3B26A5A251F0E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OBJROOT = "bin-int/Release";
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = bin/Release;
+			};
+			name = Release;
+		};
+		A16F9E77C9AA5729B145E4B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CONFIGURATION_BUILD_DIR = bin/Release;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/Vendor/GLFW/include",
+					"${SRCROOT}/Vendor/GLEW/include",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = Neverland;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B9CB803D023C646F46DB367D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CONFIGURATION_BUILD_DIR = bin/Debug;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/Vendor/GLFW/include",
+					"${SRCROOT}/Vendor/GLEW/include",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = Neverland;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Neverland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D56A6EC5280820D76050AE /* Debug */,
+				A0419828A3B26A5A251F0E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		437540F7E6C0CA2901919737 /* Build configuration list for PBXNativeTarget "Neverland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9CB803D023C646F46DB367D /* Debug */,
+				A16F9E77C9AA5729B145E4B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
