@@ -155,7 +155,7 @@
 			productInstallPath = "$(HOME)/bin";
 			productName = Neverland;
 			productReference = C6255728C996295A4B02CD68 /* Neverland */;
-			productType = "com.apple.product-type.tool";
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
