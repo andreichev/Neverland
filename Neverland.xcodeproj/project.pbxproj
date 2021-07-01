@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		844C6258268A4126001A2D24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844C6257268A4125001A2D24 /* main.cpp */; };
+		844C6258268A4126001A2D24 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844C6257268A4125001A2D24 /* Application.cpp */; };
 		844C6270268B0FF1001A2D24 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C626D268B0FDB001A2D24 /* libglfw3.a */; };
 		844C6279268B1485001A2D24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C6278268B1485001A2D24 /* Cocoa.framework */; };
 		844C627B268B148B001A2D24 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C627A268B148B001A2D24 /* IOKit.framework */; };
@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		844C6257268A4125001A2D24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		844C6257268A4125001A2D24 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLFW.xcodeproj; path = Vendor/GLFW/GLFW.xcodeproj; sourceTree = "<group>"; };
 		844C6278268B1485001A2D24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		844C627A268B148B001A2D24 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -86,7 +86,7 @@
 		843AE585268BC27E002963BD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				844C6257268A4125001A2D24 /* main.cpp */,
+				844C6257268A4125001A2D24 /* Application.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844C6258268A4126001A2D24 /* main.cpp in Sources */,
+				844C6258268A4126001A2D24 /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
