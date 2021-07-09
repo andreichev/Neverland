@@ -8,7 +8,7 @@
       location = "container:"
       name = "Vendor">
       <FileRef
-         location = "group:Vendor/GLEW/GLEW.xcodeproj">
+         location = "group:Vendor/GLAD/GLAD.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Vendor/GLFW/GLFW.xcodeproj">
