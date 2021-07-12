@@ -1070,7 +1070,6 @@
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
-				LD_DYLIB_INSTALL_NAME = "${SRCROOT}/bin";
 				LIBRARY_STYLE = DYNAMIC;
 				OTHER_CFLAGS = (
 					"-fPIC",
@@ -1225,7 +1224,6 @@
 					"$(inherited)",
 				);
 				INSTALL_PATH = "";
-				LD_DYLIB_INSTALL_NAME = "${SRCROOT}/bin";
 				LIBRARY_STYLE = DYNAMIC;
 				OTHER_CFLAGS = (
 					"-fPIC",

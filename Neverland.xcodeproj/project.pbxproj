@@ -15,6 +15,7 @@
 		844C6279268B1485001A2D24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C6278268B1485001A2D24 /* Cocoa.framework */; };
 		844C627B268B148B001A2D24 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C627A268B148B001A2D24 /* IOKit.framework */; };
 		844C627D268B1490001A2D24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C627C268B1490001A2D24 /* OpenGL.framework */; };
+		845DF95A269CB25B0072E5B2 /* libglm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845DF957269CB2420072E5B2 /* libglm.a */; };
 		846E2A03269853F200E2C788 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846E2A02269853F200E2C788 /* Shader.cpp */; };
 		84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FFA113269852EC009ACAF2 /* libGLAD.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,20 @@
 			remoteGlobalIDString = BBD89A2F1E4049B5B8A94F54;
 			remoteInfo = glfw;
 		};
+		845DF956269CB2420072E5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845DF952269CB2420072E5B2 /* glm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED8C157052A04F44B8281FB4;
+			remoteInfo = glm;
+		};
+		845DF958269CB2540072E5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845DF952269CB2420072E5B2 /* glm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C43CE40BAFD40989B7BFB16;
+			remoteInfo = glm;
+		};
 		84FFA112269852EC009ACAF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */;
@@ -73,6 +88,8 @@
 		844C6278268B1485001A2D24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		844C627A268B148B001A2D24 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		844C627C268B1490001A2D24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		845DF952269CB2420072E5B2 /* glm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glm.xcodeproj; path = Vendor/glm/glm.xcodeproj; sourceTree = "<group>"; };
+		845DF95B269CB5410072E5B2 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		846E2A02269853F200E2C788 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLAD.xcodeproj; path = Vendor/GLAD/GLAD.xcodeproj; sourceTree = "<group>"; };
 		C6255728C996295A4B02CD68 /* Neverland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverland.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845DF95A269CB25B0072E5B2 /* libglm.a in Frameworks */,
 				844A2FC5269C9B5E00F0BAEA /* libassimp.4.1.0.dylib in Frameworks */,
 				84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */,
 				844C6270268B0FF1001A2D24 /* libglfw3.a in Frameworks */,
@@ -120,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				846E2A02269853F200E2C788 /* Shader.cpp */,
+				845DF95B269CB5410072E5B2 /* Shader.h */,
 				844C6257268A4125001A2D24 /* Application.cpp */,
 			);
 			path = src;
@@ -146,6 +165,7 @@
 		844C6267268B0FB1001A2D24 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				845DF952269CB2420072E5B2 /* glm.xcodeproj */,
 				844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */,
 				84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */,
 				844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */,
@@ -157,6 +177,14 @@
 			isa = PBXGroup;
 			children = (
 				844C626D268B0FDB001A2D24 /* libglfw3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845DF953269CB2420072E5B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845DF957269CB2420072E5B2 /* libglm.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +219,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				845DF959269CB2540072E5B2 /* PBXTargetDependency */,
 				844A2FC4269C9B5600F0BAEA /* PBXTargetDependency */,
 				84FFA115269852F1009ACAF2 /* PBXTargetDependency */,
 				844C626F268B0FE6001A2D24 /* PBXTargetDependency */,
@@ -236,6 +265,10 @@
 					ProductGroup = 844C6269268B0FDB001A2D24 /* Products */;
 					ProjectRef = 844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */;
 				},
+				{
+					ProductGroup = 845DF953269CB2420072E5B2 /* Products */;
+					ProjectRef = 845DF952269CB2420072E5B2 /* glm.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -257,6 +290,13 @@
 			fileType = archive.ar;
 			path = libglfw3.a;
 			remoteRef = 844C626C268B0FDB001A2D24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		845DF957269CB2420072E5B2 /* libglm.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libglm.a;
+			remoteRef = 845DF956269CB2420072E5B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		84FFA113269852EC009ACAF2 /* libGLAD.a */ = {
@@ -302,6 +342,11 @@
 			isa = PBXTargetDependency;
 			name = glfw;
 			targetProxy = 844C626E268B0FE6001A2D24 /* PBXContainerItemProxy */;
+		};
+		845DF959269CB2540072E5B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = glm;
+			targetProxy = 845DF958269CB2540072E5B2 /* PBXContainerItemProxy */;
 		};
 		84FFA115269852F1009ACAF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -361,6 +406,7 @@
 					"${SRCROOT}/Vendor/GLFW/include",
 					"${SRCROOT}/Vendor/GLAD/include",
 					"${SRCROOT}/Vendor/Assimp/include",
+					"${SRCROOT}/Vendor/glm",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -384,6 +430,7 @@
 					"${SRCROOT}/Vendor/GLFW/include",
 					"${SRCROOT}/Vendor/GLAD/include",
 					"${SRCROOT}/Vendor/Assimp/include",
+					"${SRCROOT}/Vendor/glm",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
