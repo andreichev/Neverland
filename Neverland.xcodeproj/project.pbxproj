@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		841D92F826985EFE00D98B49 /* Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 841D92F726985EFE00D98B49 /* Fragment.glsl */; };
 		841D92FA2698607000D98B49 /* Vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 841D92F92698607000D98B49 /* Vertex.glsl */; };
+		844A2FC5269C9B5E00F0BAEA /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A2FC2269C9B3500F0BAEA /* libassimp.4.1.0.dylib */; };
 		844C6258268A4126001A2D24 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844C6257268A4125001A2D24 /* Application.cpp */; };
 		844C6270268B0FF1001A2D24 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C626D268B0FDB001A2D24 /* libglfw3.a */; };
 		844C6279268B1485001A2D24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C6278268B1485001A2D24 /* Cocoa.framework */; };
@@ -19,6 +20,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		844A2FC1269C9B3500F0BAEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B9CA0512F85492CAA3EA856;
+			remoteInfo = assimp;
+		};
+		844A2FC3269C9B5600F0BAEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 840E82D426554D5F956577EB;
+			remoteInfo = assimp;
+		};
 		844C626C268B0FDB001A2D24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */;
@@ -52,6 +67,7 @@
 /* Begin PBXFileReference section */
 		841D92F726985EFE00D98B49 /* Fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fragment.glsl; sourceTree = "<group>"; };
 		841D92F92698607000D98B49 /* Vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Vertex.glsl; sourceTree = "<group>"; };
+		844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Assimp.xcodeproj; path = Vendor/Assimp/Assimp.xcodeproj; sourceTree = "<group>"; };
 		844C6257268A4125001A2D24 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLFW.xcodeproj; path = Vendor/GLFW/GLFW.xcodeproj; sourceTree = "<group>"; };
 		844C6278268B1485001A2D24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844A2FC5269C9B5E00F0BAEA /* libassimp.4.1.0.dylib in Frameworks */,
 				84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */,
 				844C6270268B0FF1001A2D24 /* libglfw3.a in Frameworks */,
 				844C627D268B1490001A2D24 /* OpenGL.framework in Frameworks */,
@@ -108,6 +125,14 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		844A2FBE269C9B3500F0BAEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844A2FC2269C9B3500F0BAEA /* libassimp.4.1.0.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		844C6254268A40BF001A2D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +146,7 @@
 		844C6267268B0FB1001A2D24 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */,
 				84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */,
 				844C6268268B0FDB001A2D24 /* GLFW.xcodeproj */,
 			);
@@ -165,6 +191,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				844A2FC4269C9B5600F0BAEA /* PBXTargetDependency */,
 				84FFA115269852F1009ACAF2 /* PBXTargetDependency */,
 				844C626F268B0FE6001A2D24 /* PBXTargetDependency */,
 			);
@@ -198,6 +225,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 844A2FBE269C9B3500F0BAEA /* Products */;
+					ProjectRef = 844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */;
+				},
+				{
 					ProductGroup = 84FFA10F269852EC009ACAF2 /* Products */;
 					ProjectRef = 84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */;
 				},
@@ -214,6 +245,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		844A2FC2269C9B3500F0BAEA /* libassimp.4.1.0.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libassimp.4.1.0.dylib;
+			remoteRef = 844A2FC1269C9B3500F0BAEA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		844C626D268B0FDB001A2D24 /* libglfw3.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -255,6 +293,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		844A2FC4269C9B5600F0BAEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = assimp;
+			targetProxy = 844A2FC3269C9B5600F0BAEA /* PBXContainerItemProxy */;
+		};
 		844C626F268B0FE6001A2D24 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = glfw;
@@ -317,6 +360,7 @@
 				HEADER_SEARCH_PATHS = (
 					"${SRCROOT}/Vendor/GLFW/include",
 					"${SRCROOT}/Vendor/GLAD/include",
+					"${SRCROOT}/Vendor/Assimp/include",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -339,6 +383,7 @@
 				HEADER_SEARCH_PATHS = (
 					"${SRCROOT}/Vendor/GLFW/include",
 					"${SRCROOT}/Vendor/GLAD/include",
+					"${SRCROOT}/Vendor/Assimp/include",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
