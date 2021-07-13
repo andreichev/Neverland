@@ -407,6 +407,7 @@
 					"${SRCROOT}/Vendor/GLAD/include",
 					"${SRCROOT}/Vendor/Assimp/include",
 					"${SRCROOT}/Vendor/glm",
+					"${SRCROOT}/Vendor/stb_image",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -431,6 +432,7 @@
 					"${SRCROOT}/Vendor/GLAD/include",
 					"${SRCROOT}/Vendor/Assimp/include",
 					"${SRCROOT}/Vendor/glm",
+					"${SRCROOT}/Vendor/stb_image",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";

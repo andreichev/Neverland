@@ -5,8 +5,6 @@
 //  Created by Admin on 12.07.2021.
 //
 
-#pragma once
-
 #include <glad/glad.h>
 
 #include <fstream>
