@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840A6215269DD5420051E485 /* grass1.png in Resources */ = {isa = PBXBuildFile; fileRef = 840A6214269DD5420051E485 /* grass1.png */; };
 		841D92F826985EFE00D98B49 /* Fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 841D92F726985EFE00D98B49 /* Fragment.glsl */; };
 		841D92FA2698607000D98B49 /* Vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 841D92F92698607000D98B49 /* Vertex.glsl */; };
 		844A2FC5269C9B5E00F0BAEA /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A2FC2269C9B3500F0BAEA /* libassimp.4.1.0.dylib */; };
@@ -17,6 +18,7 @@
 		844C627D268B1490001A2D24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844C627C268B1490001A2D24 /* OpenGL.framework */; };
 		845DF95A269CB25B0072E5B2 /* libglm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845DF957269CB2420072E5B2 /* libglm.a */; };
 		846E2A03269853F200E2C788 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846E2A02269853F200E2C788 /* Shader.cpp */; };
+		8485EACC269DDEDA00759516 /* stb_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8485EAC9269DDEC700759516 /* stb_image.a */; };
 		84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FFA113269852EC009ACAF2 /* libGLAD.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,20 @@
 			remoteGlobalIDString = 3C43CE40BAFD40989B7BFB16;
 			remoteInfo = glm;
 		};
+		8485EAC8269DDEC700759516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8485EAC4269DDEC700759516 /* stb_image.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 840A621F269DDDDB0051E485;
+			remoteInfo = stb_image;
+		};
+		8485EACA269DDED300759516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8485EAC4269DDEC700759516 /* stb_image.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 840A621E269DDDDB0051E485;
+			remoteInfo = stb_image;
+		};
 		84FFA112269852EC009ACAF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */;
@@ -80,6 +96,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840A6214269DD5420051E485 /* grass1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass1.png; sourceTree = "<group>"; };
 		841D92F726985EFE00D98B49 /* Fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fragment.glsl; sourceTree = "<group>"; };
 		841D92F92698607000D98B49 /* Vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Vertex.glsl; sourceTree = "<group>"; };
 		844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Assimp.xcodeproj; path = Vendor/Assimp/Assimp.xcodeproj; sourceTree = "<group>"; };
@@ -91,6 +108,7 @@
 		845DF952269CB2420072E5B2 /* glm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glm.xcodeproj; path = Vendor/glm/glm.xcodeproj; sourceTree = "<group>"; };
 		845DF95B269CB5410072E5B2 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		846E2A02269853F200E2C788 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		8485EAC4269DDEC700759516 /* stb_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stb_image.xcodeproj; path = Vendor/stb_image/stb_image.xcodeproj; sourceTree = "<group>"; };
 		84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLAD.xcodeproj; path = Vendor/GLAD/GLAD.xcodeproj; sourceTree = "<group>"; };
 		C6255728C996295A4B02CD68 /* Neverland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8485EACC269DDEDA00759516 /* stb_image.a in Frameworks */,
 				845DF95A269CB25B0072E5B2 /* libglm.a in Frameworks */,
 				844A2FC5269C9B5E00F0BAEA /* libassimp.4.1.0.dylib in Frameworks */,
 				84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */,
@@ -128,6 +147,7 @@
 		841D92F626985E8F00D98B49 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				840A6214269DD5420051E485 /* grass1.png */,
 				841D92F726985EFE00D98B49 /* Fragment.glsl */,
 				841D92F92698607000D98B49 /* Vertex.glsl */,
 			);
@@ -165,6 +185,7 @@
 		844C6267268B0FB1001A2D24 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
+				8485EAC4269DDEC700759516 /* stb_image.xcodeproj */,
 				845DF952269CB2420072E5B2 /* glm.xcodeproj */,
 				844A2FBD269C9B3500F0BAEA /* Assimp.xcodeproj */,
 				84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */,
@@ -185,6 +206,14 @@
 			isa = PBXGroup;
 			children = (
 				845DF957269CB2420072E5B2 /* libglm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8485EAC5269DDEC700759516 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8485EAC9269DDEC700759516 /* stb_image.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,6 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8485EACB269DDED300759516 /* PBXTargetDependency */,
 				845DF959269CB2540072E5B2 /* PBXTargetDependency */,
 				844A2FC4269C9B5600F0BAEA /* PBXTargetDependency */,
 				84FFA115269852F1009ACAF2 /* PBXTargetDependency */,
@@ -269,6 +299,10 @@
 					ProductGroup = 845DF953269CB2420072E5B2 /* Products */;
 					ProjectRef = 845DF952269CB2420072E5B2 /* glm.xcodeproj */;
 				},
+				{
+					ProductGroup = 8485EAC5269DDEC700759516 /* Products */;
+					ProjectRef = 8485EAC4269DDEC700759516 /* stb_image.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -299,6 +333,13 @@
 			remoteRef = 845DF956269CB2420072E5B2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		8485EAC9269DDEC700759516 /* stb_image.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = stb_image.a;
+			remoteRef = 8485EAC8269DDEC700759516 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		84FFA113269852EC009ACAF2 /* libGLAD.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -313,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A6215269DD5420051E485 /* grass1.png in Resources */,
 				841D92F826985EFE00D98B49 /* Fragment.glsl in Resources */,
 				841D92FA2698607000D98B49 /* Vertex.glsl in Resources */,
 			);
@@ -347,6 +389,11 @@
 			isa = PBXTargetDependency;
 			name = glm;
 			targetProxy = 845DF958269CB2540072E5B2 /* PBXContainerItemProxy */;
+		};
+		8485EACB269DDED300759516 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = stb_image;
+			targetProxy = 8485EACA269DDED300759516 /* PBXContainerItemProxy */;
 		};
 		84FFA115269852F1009ACAF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
