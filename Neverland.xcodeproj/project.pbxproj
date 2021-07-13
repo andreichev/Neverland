@@ -19,6 +19,7 @@
 		845DF95A269CB25B0072E5B2 /* libglm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845DF957269CB2420072E5B2 /* libglm.a */; };
 		846E2A03269853F200E2C788 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846E2A02269853F200E2C788 /* Shader.cpp */; };
 		8485EACC269DDEDA00759516 /* stb_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8485EAC9269DDEC700759516 /* stb_image.a */; };
+		84BA01F6269DE0D300F117FE /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84BA01F4269DE0D300F117FE /* Mesh.cpp */; };
 		84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FFA113269852EC009ACAF2 /* libGLAD.a */; };
 /* End PBXBuildFile section */
 
@@ -106,9 +107,11 @@
 		844C627A268B148B001A2D24 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		844C627C268B1490001A2D24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		845DF952269CB2420072E5B2 /* glm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = glm.xcodeproj; path = Vendor/glm/glm.xcodeproj; sourceTree = "<group>"; };
-		845DF95B269CB5410072E5B2 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		845DF95B269CB5410072E5B2 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		846E2A02269853F200E2C788 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		8485EAC4269DDEC700759516 /* stb_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stb_image.xcodeproj; path = Vendor/stb_image/stb_image.xcodeproj; sourceTree = "<group>"; };
+		84BA01F4269DE0D300F117FE /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		84BA01F5269DE0D300F117FE /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 		84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLAD.xcodeproj; path = Vendor/GLAD/GLAD.xcodeproj; sourceTree = "<group>"; };
 		C6255728C996295A4B02CD68 /* Neverland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,8 +160,7 @@
 		843AE585268BC27E002963BD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				846E2A02269853F200E2C788 /* Shader.cpp */,
-				845DF95B269CB5410072E5B2 /* Shader.h */,
+				84BA01F7269DFF8E00F117FE /* core */,
 				844C6257268A4125001A2D24 /* Application.cpp */,
 			);
 			path = src;
@@ -216,6 +218,17 @@
 				8485EAC9269DDEC700759516 /* stb_image.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84BA01F7269DFF8E00F117FE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				84BA01F4269DE0D300F117FE /* Mesh.cpp */,
+				84BA01F5269DE0D300F117FE /* Mesh.hpp */,
+				846E2A02269853F200E2C788 /* Shader.cpp */,
+				845DF95B269CB5410072E5B2 /* Shader.hpp */,
+			);
+			path = core;
 			sourceTree = "<group>";
 		};
 		84FFA10F269852EC009ACAF2 /* Products */ = {
@@ -367,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BA01F6269DE0D300F117FE /* Mesh.cpp in Sources */,
 				846E2A03269853F200E2C788 /* Shader.cpp in Sources */,
 				844C6258268A4126001A2D24 /* Application.cpp in Sources */,
 			);
