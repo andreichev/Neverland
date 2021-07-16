@@ -22,8 +22,8 @@ Mesh::Mesh(Vertex* vertices, unsigned int verticesCount, unsigned int* indices, 
 Mesh::~Mesh() {}
 
 void Mesh::draw() {
-    glBindTexture(GL_TEXTURE_2D, textureId);
+    GLCall(glBindTexture(GL_TEXTURE_2D, textureId));
     va.bind();
     ib.bind();
-    GLCall(glDrawElements(GL_TRIANGLES, ib.getSize(), GL_INT, 0));
+    GLCall(glDrawElements(GL_TRIANGLES, ib.getSize(), GL_UNSIGNED_INT, 0));
 }
