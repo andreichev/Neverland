@@ -6,24 +6,19 @@
 //
 
 #pragma once
-#include <vector>
 #include <string>
-
 #include <glm/glm.hpp>
 
-struct Vertex {
-    // position
-    glm::vec3 Position;
-    // texCoords
-    glm::vec2 TexCoords;
-    
-    Vertex(glm::vec3 aPosition, glm::vec2 aTexCoords): Position(aPosition), TexCoords(aTexCoords) {};
-};
+#include "VertexArray.hpp"
+#include "IndexBuffer.hpp"
 
 class Mesh {
-    unsigned int textureId, vertexBufferId, indexBufferId, vertexArrayId;
+    VertexArray va;
+    IndexBuffer ib;
+    VertexBuffer vb;
+    unsigned int textureId;
 public:
-    Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, unsigned int textureId);
+    Mesh(Vertex* vertices, unsigned int verticesCount, unsigned int* indices, unsigned int indicesCount, unsigned int textureId);
+    ~Mesh();
     void draw();
-    void unload();
 };

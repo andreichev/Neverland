@@ -19,6 +19,9 @@
 		845DF95A269CB25B0072E5B2 /* libglm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 845DF957269CB2420072E5B2 /* libglm.a */; };
 		846E2A03269853F200E2C788 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846E2A02269853F200E2C788 /* Shader.cpp */; };
 		8485EACC269DDEDA00759516 /* stb_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8485EAC9269DDEC700759516 /* stb_image.a */; };
+		84A3E871269F0E0600C25B58 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E86F269F0E0600C25B58 /* VertexArray.cpp */; };
+		84A3E875269F23E400C25B58 /* VertexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E873269F23E400C25B58 /* VertexBuffer.cpp */; };
+		84A3E88026A0166A00C25B58 /* IndexBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A3E87E26A0166A00C25B58 /* IndexBuffer.cpp */; };
 		84BA01F6269DE0D300F117FE /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84BA01F4269DE0D300F117FE /* Mesh.cpp */; };
 		84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FFA113269852EC009ACAF2 /* libGLAD.a */; };
 /* End PBXBuildFile section */
@@ -110,6 +113,14 @@
 		845DF95B269CB5410072E5B2 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		846E2A02269853F200E2C788 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		8485EAC4269DDEC700759516 /* stb_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stb_image.xcodeproj; path = Vendor/stb_image/stb_image.xcodeproj; sourceTree = "<group>"; };
+		848F04CC26A18C7A00FE7713 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		84A3E86F269F0E0600C25B58 /* VertexArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
+		84A3E870269F0E0600C25B58 /* VertexArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexArray.hpp; sourceTree = "<group>"; };
+		84A3E873269F23E400C25B58 /* VertexBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
+		84A3E874269F23E400C25B58 /* VertexBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexBuffer.hpp; sourceTree = "<group>"; };
+		84A3E877269F247D00C25B58 /* VertexBufferLayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexBufferLayout.hpp; sourceTree = "<group>"; };
+		84A3E87E26A0166A00C25B58 /* IndexBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IndexBuffer.cpp; sourceTree = "<group>"; };
+		84A3E87F26A0166A00C25B58 /* IndexBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IndexBuffer.hpp; sourceTree = "<group>"; };
 		84BA01F4269DE0D300F117FE /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
 		84BA01F5269DE0D300F117FE /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 		84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLAD.xcodeproj; path = Vendor/GLAD/GLAD.xcodeproj; sourceTree = "<group>"; };
@@ -227,6 +238,14 @@
 				84BA01F5269DE0D300F117FE /* Mesh.hpp */,
 				846E2A02269853F200E2C788 /* Shader.cpp */,
 				845DF95B269CB5410072E5B2 /* Shader.hpp */,
+				84A3E86F269F0E0600C25B58 /* VertexArray.cpp */,
+				84A3E870269F0E0600C25B58 /* VertexArray.hpp */,
+				84A3E877269F247D00C25B58 /* VertexBufferLayout.hpp */,
+				84A3E873269F23E400C25B58 /* VertexBuffer.cpp */,
+				84A3E874269F23E400C25B58 /* VertexBuffer.hpp */,
+				84A3E87E26A0166A00C25B58 /* IndexBuffer.cpp */,
+				84A3E87F26A0166A00C25B58 /* IndexBuffer.hpp */,
+				848F04CC26A18C7A00FE7713 /* Renderer.hpp */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -381,6 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BA01F6269DE0D300F117FE /* Mesh.cpp in Sources */,
+				84A3E875269F23E400C25B58 /* VertexBuffer.cpp in Sources */,
+				84A3E88026A0166A00C25B58 /* IndexBuffer.cpp in Sources */,
+				84A3E871269F0E0600C25B58 /* VertexArray.cpp in Sources */,
 				846E2A03269853F200E2C788 /* Shader.cpp in Sources */,
 				844C6258268A4126001A2D24 /* Application.cpp in Sources */,
 			);

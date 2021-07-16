@@ -94,13 +94,13 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath, const char* geo
     
 }
 
+Shader::~Shader() {
+    glDeleteProgram(ID);
+}
+
 void Shader::use()
 {
     glUseProgram(ID);
-}
-
-void Shader::deleteProgram() {
-    glDeleteProgram(ID);
 }
 
 void Shader::setBool(const std::string &name, bool value) const
