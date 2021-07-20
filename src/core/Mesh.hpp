@@ -11,14 +11,15 @@
 
 #include "VertexArray.hpp"
 #include "IndexBuffer.hpp"
+#include "Texture.hpp"
 
 class Mesh {
     VertexArray va;
     IndexBuffer ib;
     VertexBuffer vb;
-    unsigned int textureId;
+    std::vector<Texture*> textures;
 public:
-    Mesh(Vertex* vertices, unsigned int verticesCount, unsigned int* indices, unsigned int indicesCount, unsigned int textureId);
+    Mesh(Vertex* vertices, unsigned int verticesCount, unsigned int* indices, unsigned int indicesCount, std::vector<Texture*> texutres);
     ~Mesh();
     void draw();
 };
