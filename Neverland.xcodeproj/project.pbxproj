@@ -174,8 +174,7 @@
 		41222AFFC4678871EDAF093F /* Neverland */ = {
 			isa = PBXGroup;
 			children = (
-				841D92F626985E8F00D98B49 /* resources */,
-				843AE585268BC27E002963BD /* src */,
+				84DA00BB26A76D9300C36A7A /* Neverland */,
 				844C6267268B0FB1001A2D24 /* Projects */,
 				A6C936B49B3FADE6EA134CF4 /* Products */,
 				844C6254268A40BF001A2D24 /* Frameworks */,
@@ -197,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				84BA01F7269DFF8E00F117FE /* core */,
-				84DA00A326A758CE00C36A7A /* vendor */,
+				841D92F626985E8F00D98B49 /* resources */,
 				844C6257268A4125001A2D24 /* Application.cpp */,
 			);
 			path = src;
@@ -298,6 +297,15 @@
 				84DA00B226A758CE00C36A7A /* imgui_draw.cpp */,
 			);
 			path = vendor;
+			sourceTree = "<group>";
+		};
+		84DA00BB26A76D9300C36A7A /* Neverland */ = {
+			isa = PBXGroup;
+			children = (
+				843AE585268BC27E002963BD /* src */,
+				84DA00A326A758CE00C36A7A /* vendor */,
+			);
+			path = Neverland;
 			sourceTree = "<group>";
 		};
 		84FFA10F269852EC009ACAF2 /* Products */ = {
@@ -551,7 +559,7 @@
 					"${SRCROOT}/Vendor/Assimp/include",
 					"${SRCROOT}/Vendor/glm",
 					"${SRCROOT}/Vendor/stb_image",
-					"${SRCROOT}/src/vendor",
+					"${SRCROOT}/Neverland/vendor",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -579,7 +587,7 @@
 					"${SRCROOT}/Vendor/Assimp/include",
 					"${SRCROOT}/Vendor/glm",
 					"${SRCROOT}/Vendor/stb_image",
-					"${SRCROOT}/src/vendor",
+					"${SRCROOT}/Neverland/vendor",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
