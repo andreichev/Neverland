@@ -31,6 +31,10 @@
 		84DA00B726A758CE00C36A7A /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DA00B026A758CE00C36A7A /* imgui_impl_glfw.cpp */; };
 		84DA00B826A758CE00C36A7A /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DA00B126A758CE00C36A7A /* imgui_demo.cpp */; };
 		84DA00B926A758CE00C36A7A /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DA00B226A758CE00C36A7A /* imgui_draw.cpp */; };
+		84DA00BF26A7E88400C36A7A /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DA00BD26A7E88400C36A7A /* Camera.cpp */; };
+		84DA00C426A7FEFE00C36A7A /* ball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DA00C126A7FEFE00C36A7A /* ball1.png */; };
+		84DA00C526A7FEFE00C36A7A /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DA00C226A7FEFE00C36A7A /* ball.png */; };
+		84DA00C626A7FEFE00C36A7A /* arbuz.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DA00C326A7FEFE00C36A7A /* arbuz.png */; };
 		84FFA116269852F4009ACAF2 /* libGLAD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FFA113269852EC009ACAF2 /* libGLAD.a */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +152,11 @@
 		84DA00B026A758CE00C36A7A /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_impl_glfw.cpp; sourceTree = "<group>"; };
 		84DA00B126A758CE00C36A7A /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
 		84DA00B226A758CE00C36A7A /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		84DA00BD26A7E88400C36A7A /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		84DA00BE26A7E88400C36A7A /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		84DA00C126A7FEFE00C36A7A /* ball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball1.png; sourceTree = "<group>"; };
+		84DA00C226A7FEFE00C36A7A /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		84DA00C326A7FEFE00C36A7A /* arbuz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arbuz.png; sourceTree = "<group>"; };
 		84FFA10E269852EC009ACAF2 /* GLAD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLAD.xcodeproj; path = Vendor/GLAD/GLAD.xcodeproj; sourceTree = "<group>"; };
 		C6255728C996295A4B02CD68 /* Neverland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Neverland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,6 +194,9 @@
 		841D92F626985E8F00D98B49 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				84DA00C326A7FEFE00C36A7A /* arbuz.png */,
+				84DA00C226A7FEFE00C36A7A /* ball.png */,
+				84DA00C126A7FEFE00C36A7A /* ball1.png */,
 				840A6214269DD5420051E485 /* grass1.png */,
 				841D92F726985EFE00D98B49 /* Fragment.glsl */,
 				841D92F92698607000D98B49 /* Vertex.glsl */,
@@ -273,6 +285,8 @@
 				848F04CC26A18C7A00FE7713 /* Renderer.hpp */,
 				84BA704F26A6B4C600A595A6 /* Texture.cpp */,
 				84BA705026A6B4C600A595A6 /* Texture.hpp */,
+				84DA00BD26A7E88400C36A7A /* Camera.cpp */,
+				84DA00BE26A7E88400C36A7A /* Camera.hpp */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -444,8 +458,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DA00C426A7FEFE00C36A7A /* ball1.png in Resources */,
+				84DA00C526A7FEFE00C36A7A /* ball.png in Resources */,
 				840A6215269DD5420051E485 /* grass1.png in Resources */,
 				841D92F826985EFE00D98B49 /* Fragment.glsl in Resources */,
+				84DA00C626A7FEFE00C36A7A /* arbuz.png in Resources */,
 				841D92FA2698607000D98B49 /* Vertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +481,7 @@
 				84DA00B826A758CE00C36A7A /* imgui_demo.cpp in Sources */,
 				84A3E875269F23E400C25B58 /* VertexBuffer.cpp in Sources */,
 				84DA00B326A758CE00C36A7A /* imgui_widgets.cpp in Sources */,
+				84DA00BF26A7E88400C36A7A /* Camera.cpp in Sources */,
 				84A3E88026A0166A00C25B58 /* IndexBuffer.cpp in Sources */,
 				84A3E871269F0E0600C25B58 /* VertexArray.cpp in Sources */,
 				846E2A03269853F200E2C788 /* Shader.cpp in Sources */,
