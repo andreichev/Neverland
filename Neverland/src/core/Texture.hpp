@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "Renderer.hpp"
+#include <string>
 
 class Texture {
 private:

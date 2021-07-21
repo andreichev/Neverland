@@ -9,7 +9,6 @@
 #include <glad/glad.h>
 
 #include "Mesh.hpp"
-#include "Renderer.hpp"
 
 Mesh::Mesh(Vertex* vertices, unsigned int verticesCount, unsigned int* indices, unsigned int indicesCount, std::vector<Texture*> textures)
     : ib(indices, indicesCount), vb(vertices, sizeof(Vertex) * verticesCount), textures(textures) {
@@ -27,5 +26,5 @@ void Mesh::draw() {
     }
     va.bind();
     ib.bind();
-    GLCall(glDrawElements(GL_TRIANGLES, ib.getSize(), GL_UNSIGNED_INT, 0));
+    glDrawElements(GL_TRIANGLES, ib.getSize(), GL_UNSIGNED_INT, 0);
 }

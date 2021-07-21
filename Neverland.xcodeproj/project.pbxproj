@@ -125,7 +125,6 @@
 		845DF95B269CB5410072E5B2 /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		846E2A02269853F200E2C788 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		8485EAC4269DDEC700759516 /* stb_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stb_image.xcodeproj; path = Vendor/stb_image/stb_image.xcodeproj; sourceTree = "<group>"; };
-		848F04CC26A18C7A00FE7713 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 		84A3E86F269F0E0600C25B58 /* VertexArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
 		84A3E870269F0E0600C25B58 /* VertexArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VertexArray.hpp; sourceTree = "<group>"; };
 		84A3E873269F23E400C25B58 /* VertexBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexBuffer.cpp; sourceTree = "<group>"; };
@@ -282,7 +281,6 @@
 				84A3E874269F23E400C25B58 /* VertexBuffer.hpp */,
 				84A3E87E26A0166A00C25B58 /* IndexBuffer.cpp */,
 				84A3E87F26A0166A00C25B58 /* IndexBuffer.hpp */,
-				848F04CC26A18C7A00FE7713 /* Renderer.hpp */,
 				84BA704F26A6B4C600A595A6 /* Texture.cpp */,
 				84BA705026A6B4C600A595A6 /* Texture.hpp */,
 				84DA00BD26A7E88400C36A7A /* Camera.cpp */,
