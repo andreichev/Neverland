@@ -54,7 +54,7 @@ int main()
     
     glEnable(GL_DEPTH_TEST);
     
-    const float SIZE = 200.f;
+    const float SIZE = 8.f;
     Vertex vertices[] = {
         // Front
         Vertex( glm::vec3(-SIZE / 2.0f, -SIZE / 2.0f,  SIZE / 2.0f), glm::vec2( 0.0f, 1.0f ) ), // 0
@@ -105,7 +105,7 @@ int main()
         Mesh mesh = Mesh(vertices, 24, indices, 36, textures);
         
         glm::mat4 view = glm::rotate(glm::mat4(1.0f), glm::radians(180.f), glm::vec3(0.0f, 1.0f, 0.0f));
-        glm::mat4 projectionMatrix = glm::perspective(90.0f, 1.0f, 0.1f, 1000.0f);
+        glm::mat4 projectionMatrix = glm::perspective(90.f, 1.0f, 0.1f, 1000.0f);
         glm::mat4 model(1.f);
         
         base.use();
@@ -116,7 +116,7 @@ int main()
         // projection - transform to NDC
     
         glm::vec4 clearColor(0.07f, 0.13f, 0.17f, 1.0f);
-        glm::vec3 translate(0.f, 0.f, 200.f);
+        glm::vec3 translate(0.f, 0.f, 10.f);
         
         float time;
         while (!glfwWindowShouldClose(window))
@@ -130,7 +130,7 @@ int main()
             base.use();
             base.setInt("texture1", 0);
             model = glm::mat4(1.f);
-            // model = glm::scale(glm::mat4(1.f), glm::vec3(abs(sin(time)) + 1.f, abs(sin(time)) + 1.f, 1.f));
+            model = glm::scale(glm::mat4(1.f), glm::vec3(abs(sin(time)) + 1.f, abs(sin(time)) + 1.f, 1.f));
             model = glm::translate(model, translate);
             model = glm::rotate(model, time, glm::vec3(1.f, 1.f, 0.f));
             base.setMat4("view", view);
@@ -144,7 +144,7 @@ int main()
             
             ImGui::Begin("Neverland begins...");
             ImGui::Text("Translation of land:");
-            ImGui::SliderFloat3("Translate", &translate.x, -300.f, 300.f);
+            ImGui::SliderFloat3("Translate", &translate.x, 0.f, 40.f);
             ImGui::ColorEdit3("Clear color:", (float*)&clearColor);
             ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate,ImGui::GetIO().Framerate);
             ImGui::End();
