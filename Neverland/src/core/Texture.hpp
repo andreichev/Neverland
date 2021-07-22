@@ -12,10 +12,11 @@
 class Texture {
 private:
     unsigned int m_RendererID;
+
 public:
-    Texture(const std::string& path);
+    Texture(const std::string &path);
     ~Texture();
-    
+
     void bind(unsigned int slot = 0) const;
     void unbind() const;
 };

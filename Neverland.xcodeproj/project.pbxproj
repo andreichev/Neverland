@@ -346,6 +346,7 @@
 				C5217938686D026A833DCF78 /* Resources */,
 				2ECE928FD21A1BC1ECEAE8CF /* Sources */,
 				5539F898F88581CA13564ED8 /* Frameworks */,
+				84938E0D26A9F6E9001978D6 /* Clang Format */,
 			);
 			buildRules = (
 			);
@@ -466,6 +467,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84938E0D26A9F6E9001978D6 /* Clang Format */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Clang Format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./scripts/format.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ECE928FD21A1BC1ECEAE8CF /* Sources */ = {

@@ -12,10 +12,9 @@
 
 #include <glm/glm.hpp>
 
-class Shader
-{
+class Shader {
 public:
-    Shader(const char* vertexPath, const char* fragmentPath, const char* geometryPath = nullptr);
+    Shader(const char *vertexPath, const char *fragmentPath, const char *geometryPath = nullptr);
     ~Shader();
     void use();
     void setBool(const std::string &name, bool value);
@@ -35,6 +34,5 @@ private:
     unsigned int m_RendererID;
     std::unordered_map<std::string, int> m_UniformLocationCache;
     void checkCompileErrors(GLuint shader, std::string type);
-    int getUniformLocation(const std::string& name);
+    int getUniformLocation(const std::string &name);
 };
-
