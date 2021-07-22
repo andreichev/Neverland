@@ -289,7 +289,7 @@
 			path = core;
 			sourceTree = "<group>";
 		};
-		84DA00A326A758CE00C36A7A /* vendor */ = {
+		84D2498B26A9FBA200644F9E /* imgui */ = {
 			isa = PBXGroup;
 			children = (
 				84DA00A426A758CE00C36A7A /* imgui.h */,
@@ -307,6 +307,14 @@
 				84DA00B026A758CE00C36A7A /* imgui_impl_glfw.cpp */,
 				84DA00B126A758CE00C36A7A /* imgui_demo.cpp */,
 				84DA00B226A758CE00C36A7A /* imgui_draw.cpp */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		84DA00A326A758CE00C36A7A /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				84D2498B26A9FBA200644F9E /* imgui */,
 			);
 			path = vendor;
 			sourceTree = "<group>";
@@ -597,7 +605,7 @@
 					"${SRCROOT}/Vendor/Assimp/include",
 					"${SRCROOT}/Vendor/glm",
 					"${SRCROOT}/Vendor/stb_image",
-					"${SRCROOT}/Neverland/vendor",
+					"${SRCROOT}/Neverland/vendor/imgui",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -625,7 +633,7 @@
 					"${SRCROOT}/Vendor/Assimp/include",
 					"${SRCROOT}/Vendor/glm",
 					"${SRCROOT}/Vendor/stb_image",
-					"${SRCROOT}/Neverland/vendor",
+					"${SRCROOT}/Neverland/vendor/imgui",
 				);
 				INSTALL_PATH = /usr/local/bin;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
