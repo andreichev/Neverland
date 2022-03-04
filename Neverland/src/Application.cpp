@@ -102,8 +102,9 @@ int main() {
         textures.push_back(&grass1);
         Mesh mesh = Mesh(vertices, 24, indices, 36, textures);
 
-        glm::mat4 view = glm::rotate(glm::mat4(1.0f), glm::radians(180.f), glm::vec3(0.0f, 1.0f, 0.0f));
-        glm::mat4 projectionMatrix = glm::perspective(90.f, 1.0f, 0.1f, 1000.0f);
+        // glm::mat4 view = glm::rotate(glm::mat4(1.0f), glm::radians(180.f), glm::vec3(0.0f, 1.0f, 0.0f));
+        glm::mat4 view = glm::lookAt(glm::vec3(0.f, 0.f, 10.f), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+        glm::mat4 projectionMatrix = glm::perspective(60.f, 1.0f, 0.1f, 1000.0f);
         glm::mat4 model(1.f);
 
         base.use();
@@ -114,7 +115,7 @@ int main() {
         // projection - transform to NDC
 
         glm::vec4 clearColor(0.07f, 0.13f, 0.17f, 1.0f);
-        glm::vec3 translate(0.f, 0.f, 10.f);
+        glm::vec3 translate(0.f, 0.f, 0.f);
 
         float time;
         while (!glfwWindowShouldClose(window)) {

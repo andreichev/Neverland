@@ -31,7 +31,6 @@ for file in $files; do
     clang-format -i "$file"
 done
 echo "Formatting done. Thanks to clang-format ❤️"
-sleep 0.6
 
 else
 echo "warning: ClangFormat not installed"
